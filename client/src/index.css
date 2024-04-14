@@ -1,68 +1,301 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.image-home{
+    width: 50%;
+    height: 50%;
+    border-radius: 8%;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.title-earthquakes{
+    color: #000;
+    font-size: 48px;
+    font-family: 'Roboto',serif;
+    font-weight: 700;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.title-text{
+    color: #000;
+    font-size: 3rem;
+    font-family: 'Roboto',serif;
+    font-weight: 900;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.text-information{
+    font-family: 'Roboto',serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #97121249;
+    margin-top: -1rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.button-watch-earthquakes{
+    padding: 1%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    margin-top: 0.5rem;
+}
+
+.text-paragraph{
+    margin-top: 4%;
+    font-size: 1.2rem;
+    color: #97121249;
+    font-weight: 500;
+
+}
+
+#input-text-type{
+    width: 25%;
+    padding: 0.5rem;
+    margin-right: 1.2rem;
+}
+
+.button-watch-earthquakes-type{
+    padding: 1%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    margin-top: 0.5rem;
+}
+
+
+.container-features{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.features-list{
+    border: #000 solid 1px;
+    padding: 2rem;
+    margin-left: 1rem;
+    list-style-type: none;
+    border-radius: 8px;
+    margin:10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.features-list a{
+    color: #007bff; 
+    text-decoration: none
+}
+
+.features-list li{
+   padding: 0.3rem 0;
+}
+
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.button-add-comment{
+    padding: 0.6rem 1rem;
+    background-color: #ff69b4;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    margin-top: 0.8rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.button-back-home{
+    padding: 0.6rem;
+    text-align: center;
+    margin-top: 1.9rem;
+    position: relative;
+    left: 18%;
+    background-color: #69bcff;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button-add-comment:hover{
+    background-color:  #e75595;
+}
+
+.button-back-home:hover{
+    background-color:  #085ca0bb;    
+}
+
+
+.container-comment{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+
+.image-comment{
+    width: 42%;
+    border-radius: 1.4rem;
+}
+
+
+.text-comment-form{
+    height: 20%;
+    width: 41.4%;
+    left: 29%;
+    bottom:-16%;
+    margin-bottom: -2%;
+    position: absolute;
+
+}
+
+
+.button-submit-comment{
+    padding: 0.8rem 1rem;
+    background-color: #ff69b4;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    left: 43.5%;
+    bottom: -20%;
+    margin-bottom: -5%;
+}
+
+
+.button-go-details{
+    padding: 0.6rem;
+    text-align: center;
+    margin-top: 1.9rem;
+    position: absolute;
+    right: 66.2%;
+    bottom: -40%;
+    background-color: #69bcff;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: -5%;
+    
+
+}
+.button-go-details:hover{
+    background-color:  #085ca0bb;   
+}
+
+
+.see-comments-button{
+    padding: 0.6rem;
+    background-color: #ff69b4;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    bottom: -40%;
+    left: 64%;
+    margin-bottom: -5%;
+}
+
+.see-comments-button-two{
+    padding: 0.9rem;
+    background-color: #ff69b4;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    margin-right: -30%;
+    margin-top: 2%;
+    color: #fff;
+}
+
+.see-comments-button:hover{
+    background-color:  #e75595;
+}
+
+.see-comments-button-two:hover{
+    background-color:  #e75595;
+}
+
+.button-submit-comment:hover{
+    background-color:  #e75595;
+}
+
+.comments-to-show{
+    border: #000 solid 1px;
+    width: 35%;
+    margin-left: 32%;
+}
+
+.date-comment{
+    font-weight: 600;
+}
+
+.comment-body{
+    padding: 4%;
+}
+
+@media(max-width:768px){
+    .container-comment {
+        position: static; 
+        margin-top:30% ; 
+        max-width: 720px; 
+      }
+    
+      .image-comment {
+        width: 100%; 
+        height: 14rem;
+        border-radius: 10px; 
+      }
+    
+      .text-comment-form {
+        position: static;
+        width: 100%; 
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem; 
+        height: 6rem;
+      }
+    
+      .button-submit-comment {
+        position: static;
+        width: auto; 
+        padding: 7%;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    
+      .button-go-details,
+      .see-comments-button {
+        position: static;
+        margin-top: 1rem; 
+        right: auto;
+        left: auto;
+        bottom: auto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 5.5%;
+      }
+
+    
+      
 }
