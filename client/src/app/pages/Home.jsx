@@ -50,7 +50,7 @@ const Home = () => {
             <button
             className="button-watch-earthquakes"
               onClick={handleGoToDetails}
-            > Ver los sismos de estos ultimos 30 dias</button>
+            > Ver los sismos de estos últimos 30 días</button>
             
         </div>
         <div>

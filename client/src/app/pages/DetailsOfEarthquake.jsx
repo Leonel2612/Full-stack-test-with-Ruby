@@ -103,7 +103,7 @@ const DetailsOfEarthquake = () => {
       {
         state.features.data && 
         <MyPagination
-          total={Math.ceil(state.features.data.pagination.total/perPageValue)}
+          total={Math.ceil(state.features.data.pagination.total)}
           current={state.features.data.pagination.current_page}
           onChangePage={handleChangePage}
           valueDisabled={state.features.isLoading}
@@ -111,14 +111,9 @@ const DetailsOfEarthquake = () => {
       }
 
       </div> 
-
-
-
-          </>:
-          <>
-          <h1>No existe ningun terremoto con dicha magnitud</h1>
           </>
-          
+          :
+          <h1>No existe ningun terremoto con dicha magnitud</h1>
         }
                 
       <div>

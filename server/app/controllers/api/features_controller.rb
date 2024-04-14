@@ -5,7 +5,7 @@ module Api
         def index
             per_page = params[:per_page].to_i
             per_page = 1000 if per_page > 1000
-            per_page = 3 if per_page <= 0
+            per_page = 2 if per_page <= 0
 
 
             if params[:mag_type].present?
@@ -21,7 +21,7 @@ module Api
 
             pagination_data = {
                 current_page: @pagy.page,
-                total: @pagy.count,
+                total: (@pagy.count.to_f/@pagy.items).round,
                 per_page: @pagy.items,
             }
 
